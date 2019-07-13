@@ -1,0 +1,94 @@
+.gallery {
+
+    background-color: #DDD;
+    text-align: center;
+
+    h1 {
+        padding-top: 2.5em;
+    }
+    p {
+        padding-bottom: 2em;
+    }
+
+    .gallery-content-holder {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        .image-info {
+            display: flex;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+
+            @include bp('phone') {
+                flex-wrap: wrap;
+                margin-bottom: 1em;
+            }
+
+            .image-container {
+                display: flex;
+                align-content: space-around;
+
+                img {
+                    height: auto;
+                    width: 100%;
+                    padding: 1em;
+                    @include bp('phone') {
+                        padding: 0;
+                    }
+                }
+            }
+
+            .text-container {
+                max-height: 250px;
+                margin-top: auto;
+                padding-right: 1em;
+                padding-left: 2em;
+
+                @include bp('phone') {
+                    padding: 1em;
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                img {
+                    width: 2.5em;
+                    height: auto;
+                }
+            }
+        }
+
+        .first-row {
+            display: flex;
+            margin-bottom: 1em;
+
+            @include bp('phone') {
+                flex-wrap: wrap;
+            }
+
+            .image-info {
+                margin-right: 1em;
+
+                @include bp('phone') {
+                    margin-right: 0;
+                }
+            }
+
+            .image-holder {
+                display: flex;
+                background-color: #FFFFFF;
+                align-content: end;
+                box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

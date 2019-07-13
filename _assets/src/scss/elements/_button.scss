@@ -1,0 +1,18 @@
+.button {
+    text-decoration: none;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+
+    &-primary {
+        color: #ffffff;
+        background-color: $color-button-primary;
+
+        &-light {
+            color: $color-button-primary;
+            border-color: $color-button-primary;
+        }
+    }
+}

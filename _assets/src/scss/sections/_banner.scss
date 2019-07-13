@@ -1,0 +1,46 @@
+.banner {
+
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:before {
+        @extend %pseudo-after;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    }
+
+    &.size-large:before {
+        padding-top: calc((9 / 16) * 100%); /* Aspect Ratio 16/9 */
+    }
+
+    &.size-small:before {
+        padding-top: calc((9 / 32) * 100%); /* Aspect Ratio 32/9 */
+    }
+
+    &>h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        color: #ffffff;
+        text-align: center;
+        z-index: 2;
+
+
+        &:before {
+            @extend %pseudo-after-box;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 6rem;
+            width: 6rem;
+            border: 1.3rem solid $color-circle;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+    }
+}

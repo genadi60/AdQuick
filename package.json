@@ -1,0 +1,29 @@
+{
+  "name": "adQuick",
+  "version": "1.0.0",
+  "description": "Jekyll theme",
+  "main": "index.js",
+  "author": "Genadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/genadi60/AdQuick/issues"
+  },
+  "homepage": "https://github.com/genadi60/AdQuick#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "exec": "^0.2.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-exec": "^3.0.2",
+    "gulp-sass": "^4.0.2",
+    "jekyll": "^3.0.0-beta1",
+    "node-sass": "^4.12.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-size": "^3.0.0",
+    "bundle": "^2.1.0",
+    "child_process": "^1.0.2",
+    "win-spawn": "^2.0.0",
+    "csso": "^3.5.1",
+    "gulp-csso": "^3.0.1"
+  }
+}

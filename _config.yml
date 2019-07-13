@@ -1,0 +1,27 @@
+title: AdQuick
+email: genadimihaylov@gmail.com
+description: ''
+destination: docs
+exclude: [_assets, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, npm-debug.log, README.md, node_modules]
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ''
+github_username:  genadi60
+
+# Build settings
+markdown: kramdown
+# theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

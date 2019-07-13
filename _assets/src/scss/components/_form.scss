@@ -1,0 +1,19 @@
+.form {
+    background-color: rgba(black, 0.9);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    z-index: 1;
+
+    & > input {
+        outline: none;
+        border: none;
+        width: 15rem;
+        background-color: #0e1d33;
+        border-radius: 0.3rem;
+        margin-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #FFF;
+        font-size: 1rem;
+    }
+}

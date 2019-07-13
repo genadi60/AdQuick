@@ -1,0 +1,20 @@
+$breakpoints:(
+        'phone': ( max-width: 700px ),
+        'tablet': ( max-width: 990px ),
+        'laptop': ( min-width: 991px ),
+        'desktop': ( min-width: 1200px )
+) !default;
+
+@mixin bp( $breakpoint ) {
+    // If The Key Exists in The Map
+    @if map_has_key( $breakpoints, $breakpoint ) {
+        @media #{inspect(map_get( $breakpoints, $breakpoint ))}{
+            @content;
+        }
+    }
+        /*If The Key Doesn't Exists in The Map*/
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{ $breakpoint }`. "
+    + "Available breakpoints are: #{ map-keys( $breakpoints )}.";
+    }
+}
