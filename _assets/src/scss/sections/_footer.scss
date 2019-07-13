@@ -1,0 +1,28 @@
+.footer {
+    background-color: #27364b;
+    padding-top: 4em;
+
+    text-align: center;
+
+    h1 {
+        color: #ffffff;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.5);
+        padding: 1em;
+    }
+
+    .rights {
+        background-color: #102039;
+    }
+
+    .form {
+        background-color: #27364b;
+        margin-bottom: 3em;
+
+        input {
+            background-color: #102039;
+        }
+    }
+}

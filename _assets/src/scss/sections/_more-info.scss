@@ -1,0 +1,29 @@
+.more-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 7em 2em;
+
+    .image-container {
+        display: block;
+        width: 40%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .text-container {
+        display: block;
+        width: 35%;
+
+        h1 {
+            margin-bottom: 2em;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
