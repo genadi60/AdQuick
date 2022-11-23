@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/genadi60/AdQuick#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "exec": "^0.2.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
